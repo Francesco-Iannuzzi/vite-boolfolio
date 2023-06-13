@@ -1,24 +1,28 @@
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppHeader from "./components/AppHeader.vue";
+import AppMain from "./components/AppMain.vue";
 
 export default {
+    name: "App",
     components: {
-        HelloWorld,
+        AppHeader,
+        AppMain
+    },
+    data() {
+        return {
+
+        };
+    },
+    mounted() {
     }
 }
 </script>
 
 <template>
-    <section class="vue-home">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex flex-column justify-content-center align-items-center vh-100">
-                    <h1>APP VUE!!!</h1>
-                    <HelloWorld />
-                </div>
-            </div>
-        </div>
-    </section>
+    <AppHeader />
+    <!-- /Header -->
+    <AppMain />
+    <!-- /Main -->
 </template>
 
 <style lang="scss">

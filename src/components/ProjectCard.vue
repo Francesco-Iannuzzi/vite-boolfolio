@@ -1,11 +1,11 @@
 <script>
 export default {
-    name: "HelloWorld",
+    name: "ProjectCard",
 }
 </script>
 
 <template>
-    <h1>HELLO WORLD!!!</h1>
+    <h1 class="bg-primary rounded">Project Card</h1>
 </template>
 
 <style lang="scss" scoped></style>
