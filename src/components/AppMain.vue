@@ -30,6 +30,9 @@ export default {
                     console.log(err);
                     this.error = error.message
                 })
+        },
+        getImage(path) {
+            return this.api_url + 'storage/' + path;
         }
     },
     mounted() {
@@ -48,10 +51,10 @@ export default {
             <h1 class="fs-4 text-secondary my-4">Projects</h1>
             <!-- /title page -->
 
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-5">
                 <ProjectCard :title="project.title" :author="project.made_by" :description="project.description"
-                    :date="project.creation_date" :cover="project.cover" :link="project.link" :code="project.code_link"
-                    :trace="project.trace" v-for="project in projects" />
+                    :date="project.creation_date" :cover="getImage(project.cover)" :link="project.link"
+                    :code="project.code_link" :trace="project.trace" v-for="project in projects" />
                 <!-- /ProjectCard -->
             </div>
             <!-- /row -->

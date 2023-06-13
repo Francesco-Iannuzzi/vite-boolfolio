@@ -11,6 +11,11 @@ export default {
         code: String,
         trace: String,
     },
+    methods: {
+        getImage(path) {
+            return this.api_url + 'storage/' + path;
+        }
+    },
 }
 </script>
 
@@ -24,9 +29,9 @@ export default {
                 <h4 class="card-title">{{ title }}</h4>
                 <small v-if="author"><strong>Author: </strong>{{ author }}</small>
                 <small v-if="date"><strong>Date: </strong>{{ date }}</small>
-                <p v-if="description" class="card-text">{{ description }}</p>
-                <hr v-if="trace">
-                <p class="card-text">{{ trace }}</p>
+                <p v-if="description" class="card-text"><strong>Description: </strong>{{ description }}</p>
+                <hr v-if="trace && description">
+                <p v-if="trace" class="card-text"><strong>Trace: </strong>{{ trace }}</p>
             </div>
             <!-- /card-body -->
 
