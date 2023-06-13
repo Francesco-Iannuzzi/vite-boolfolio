@@ -42,18 +42,19 @@ export default {
 
 <template>
     <section class="vue-home">
-        <div class="container py-5">
-            <h1 class="fs-4 text-secondary my-4">Projects</h1>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3">
-                <div class="col" v-for="project in projects">
-                    <div class="card h-100">
-                        <ProjectCard></ProjectCard>
-                        <!-- /ProjectCard -->
-                    </div>
 
-                </div>
+        <div class="container py-5">
+
+            <h1 class="fs-4 text-secondary my-4">Projects</h1>
+            <!-- /title page -->
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3">
+                <ProjectCard :title="project.title" v-for="project in projects" />
+                <!-- /ProjectCard -->
             </div>
+            <!-- /row -->
         </div>
+
     </section>
 </template>
 

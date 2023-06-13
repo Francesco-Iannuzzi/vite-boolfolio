@@ -1,11 +1,18 @@
 <script>
 export default {
     name: "ProjectCard",
+    props: {
+        title: String,
+    }
 }
 </script>
 
 <template>
-    <h1 class="bg-primary rounded">Project Card</h1>
+    <div class="col">
+        <div class="card h-100">
+            <h1 class="fs-4">{{ title }}</h1>
+        </div>
+    </div>
 </template>
 
 <style lang="scss" scoped></style>
