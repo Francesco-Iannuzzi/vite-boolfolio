@@ -18,6 +18,7 @@ export default {
     <div class="col">
         <div class="card h-100">
             <h1 class="fs-4">{{ title }}</h1>
+            <small>{{ author }}</small>
             <small>{{ description }}</small>
             <small>{{ date }}</small>
             <small>{{ link }}</small>
