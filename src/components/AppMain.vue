@@ -49,10 +49,13 @@ export default {
             <!-- /title page -->
 
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3">
-                <ProjectCard :title="project.title" v-for="project in projects" />
+                <ProjectCard :title="project.title" :author="project.made_by" :description="project.description"
+                    :date="project.creation_date" :cover="project.cover" :link="project.link" :code="project.code_link"
+                    :trace="project.trace" v-for="project in projects" />
                 <!-- /ProjectCard -->
             </div>
             <!-- /row -->
+
         </div>
 
     </section>
