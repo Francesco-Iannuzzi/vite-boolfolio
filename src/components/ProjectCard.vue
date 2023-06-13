@@ -10,21 +10,32 @@ export default {
         link: String,
         code: String,
         trace: String,
-    }
+    },
 }
 </script>
 
 <template>
     <div class="col">
         <div class="card h-100">
-            <h1 class="fs-4">{{ title }}</h1>
-            <small>{{ author }}</small>
-            <small>{{ description }}</small>
-            <small>{{ date }}</small>
-            <small>{{ link }}</small>
-            <small>{{ code }}</small>
-            <small>{{ trace }}</small>
-            <img :src="cover" alt="">
+            <img class="card-img-top" :src="cover" :alt="title">
+            <!-- /card-img-top -->
+
+            <div class="card-body d-flex flex-column">
+                <h4 class="card-title">{{ title }}</h4>
+                <small v-if="author"><strong>Author: </strong>{{ author }}</small>
+                <small v-if="date"><strong>Date: </strong>{{ date }}</small>
+                <p v-if="description" class="card-text">{{ description }}</p>
+                <hr v-if="trace">
+                <p class="card-text">{{ trace }}</p>
+            </div>
+            <!-- /card-body -->
+
+
+            <div v-if="link || code" class="card-footer d-flex flex-column">
+                <small v-if="link"><strong>Link: </strong>{{ link }}</small>
+                <small v-if="code"><strong>Code Link: </strong>{{ code }}</small>
+            </div>
+            <!-- /card-footer -->
         </div>
     </div>
 </template>
