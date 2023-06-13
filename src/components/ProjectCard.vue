@@ -10,11 +10,8 @@ export default {
         link: String,
         code: String,
         trace: String,
-    },
-    methods: {
-        getImage(path) {
-            return this.api_url + 'storage/' + path;
-        }
+        technologies: Array,
+        type: Object,
     },
 }
 </script>
@@ -26,12 +23,30 @@ export default {
             <!-- /card-img-top -->
 
             <div class="card-body d-flex flex-column">
-                <h4 class="card-title">{{ title }}</h4>
-                <small v-if="author"><strong>Author: </strong>{{ author }}</small>
-                <small v-if="date"><strong>Date: </strong>{{ date }}</small>
-                <p v-if="description" class="card-text"><strong>Description: </strong>{{ description }}</p>
+                <h4 class="card-title">
+                    {{ title }}
+                </h4>
+                <small v-if="author">
+                    <strong>Author: </strong>
+                    {{ author }}
+                </small>
+                <small v-if="date">
+                    <strong>Date: </strong>
+                    {{ date }}
+                </small>
+                <!-- <p v-if="description" class="card-text">
+                    <strong>Description: </strong>
+                    {{ description }}
+                </p>
                 <hr v-if="trace && description">
-                <p v-if="trace" class="card-text"><strong>Trace: </strong>{{ trace }}</p>
+                <p v-if="trace" class="card-text">
+                    <strong>Trace: </strong>
+                    {{ trace }}
+                </p> -->
+                <div v-for="technology in technologies">
+                    <span class="badge bg-primary">{{ technology.name }}</span>
+                </div>
+                <h5>{{ type.name }}</h5>
             </div>
             <!-- /card-body -->
 

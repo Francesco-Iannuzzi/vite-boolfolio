@@ -54,7 +54,8 @@ export default {
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-5">
                 <ProjectCard :title="project.title" :author="project.made_by" :description="project.description"
                     :date="project.creation_date" :cover="getImage(project.cover)" :link="project.link"
-                    :code="project.code_link" :trace="project.trace" v-for="project in projects" />
+                    :code="project.code_link" :trace="project.trace" :technologies="project.technologies"
+                    :type="project.type" v-for="project in projects" />
                 <!-- /ProjectCard -->
             </div>
             <!-- /row -->
