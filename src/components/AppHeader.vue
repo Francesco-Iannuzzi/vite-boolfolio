@@ -15,6 +15,15 @@ export default {
 }
 </script>
 
-<template></template>
+<template>
+    <nav class="navbar navbar-expand navbar-light bg-dark">
+        <div class="nav navbar-nav">
+            <router-link class="nav-link" :to="{ 'name': 'home' }" aria-current="page">Home</router-link>
+            <router-link class="nav-link" :to="{ 'name': 'contacts' }">Contacts</router-link>
+            <router-link class="nav-link" :to="{ 'name': 'about' }">About</router-link>
 
-<style lang="scss"></style>
+        </div>
+    </nav>
+</template>
+
+<style lang="scss" scoped></style>
