@@ -22,7 +22,7 @@ export default {
                 .get(url)
                 .then(response => {
                     console.log(response.data);
-                    this.projects = response.data.projects;
+                    this.projects = response.data.result;
                     this.loading = false;
                     console.log(this.projects);
                 })
