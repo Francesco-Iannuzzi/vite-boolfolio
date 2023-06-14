@@ -3,6 +3,7 @@ export default {
     name: "ProjectCard",
     props: {
         title: String,
+        slug: String,
         author: String,
         description: String,
         date: String,
@@ -34,19 +35,12 @@ export default {
                     <strong>Date: </strong>
                     {{ date }}
                 </small>
-                <!-- <p v-if="description" class="card-text">
-                    <strong>Description: </strong>
-                    {{ description }}
-                </p>
-                <hr v-if="trace && description">
-                <p v-if="trace" class="card-text">
-                    <strong>Trace: </strong>
-                    {{ trace }}
-                </p> -->
                 <div v-for="technology in technologies">
                     <span class="badge bg-primary">{{ technology.name }}</span>
                 </div>
                 <h5>{{ type.name }}</h5>
+                <router-link class="text-center btn btn-warning"
+                    :to="{ name: 'single-project', params: { 'slug': slug } }">More</router-link>
             </div>
             <!-- /card-body -->
 

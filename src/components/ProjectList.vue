@@ -55,10 +55,10 @@ export default {
         <div class="container py-5">
 
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-5 mb-4">
-                <ProjectCard :title="project.title" :author="project.made_by" :description="project.description"
-                    :date="project.creation_date" :cover="getImage(project.cover)" :link="project.link"
-                    :code="project.code_link" :trace="project.trace" :technologies="project.technologies"
-                    :type="project.type" v-for="project in projects.data" />
+                <ProjectCard :title="project.title" :slug="project.slug" :author="project.made_by"
+                    :description="project.description" :date="project.creation_date" :cover="getImage(project.cover)"
+                    :link="project.link" :code="project.code_link" :trace="project.trace"
+                    :technologies="project.technologies" :type="project.type" v-for="project in projects.data" />
                 <!-- /ProjectCard -->
             </div>
             <!-- /row -->
