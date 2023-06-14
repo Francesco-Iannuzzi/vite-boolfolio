@@ -1,12 +1,20 @@
 <script>
+import AppBanner from '../components/AppBanner.vue';
+
 export default {
-    name: 'AboutView',
+    name: "AboutView",
+    components: {
+        AppBanner,
+    }
 }
 </script>
 
 <template>
     <section>
-        <h1>ABOUT VIEW</h1>
+
+        <AppBanner title="About" />
+        <!-- /Banner -->
+
     </section>
 </template>
 

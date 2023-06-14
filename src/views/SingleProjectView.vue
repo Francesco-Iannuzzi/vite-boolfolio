@@ -2,9 +2,9 @@
 import AppBanner from '../components/AppBanner.vue';
 
 export default {
-    name: "ContactsView",
+    name: 'SingleProjectView',
     components: {
-        AppBanner,
+        AppBanner
     }
 }
 </script>
@@ -12,7 +12,7 @@ export default {
 <template>
     <section>
 
-        <AppBanner title="Contacts" />
+        <AppBanner title="Single Project" />
         <!-- /Banner -->
 
     </section>

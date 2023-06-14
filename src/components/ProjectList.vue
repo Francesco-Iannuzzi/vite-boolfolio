@@ -3,7 +3,7 @@ import axios from 'axios';
 import ProjectCard from "./ProjectCard.vue";
 
 export default {
-    name: "AppMain",
+    name: "ProjectList",
     components: {
         ProjectCard,
     },
@@ -53,9 +53,6 @@ export default {
     <section class="vue-home">
 
         <div class="container py-5">
-
-            <h1 class="fs-4 text-secondary my-4">Projects</h1>
-            <!-- /title page -->
 
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-5 mb-4">
                 <ProjectCard :title="project.title" :author="project.made_by" :description="project.description"
