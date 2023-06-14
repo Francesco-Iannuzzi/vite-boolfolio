@@ -23,8 +23,7 @@ export default {
     <!-- /Header -->
     <AppMain />
     <!-- /Main -->
+    <router-view></router-view>
 </template>
 
-<style lang="scss">
-@use './styles/general.scss';
-</style>
+<style lang="scss" scoped></style>
