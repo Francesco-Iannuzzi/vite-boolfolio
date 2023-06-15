@@ -47,8 +47,7 @@ export default {
                 </div>
                 <hr>
                 <h5 class="fs-6 text-center">{{ type.name }}</h5>
-                <router-link class="text-center btn btn-warning"
-                    :to="{ name: 'single-project', params: { 'slug': slug } }">More</router-link>
+                <router-link class="text-center" :to="{ name: 'single-project', params: { 'slug': slug } }"></router-link>
             </div>
             <!-- /card-body -->
 
