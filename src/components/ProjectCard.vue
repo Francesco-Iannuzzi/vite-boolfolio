@@ -14,40 +14,47 @@ export default {
         technologies: Array,
         type: Object,
     },
+    mounted() {
+        let tech = this.technologies
+        console.log(tech[1]);
+    }
 }
 </script>
 
 <template>
     <div class="col">
-        <div class="card h-100">
+        <div class="card shadow h-100">
             <img class="card-img-top" :src="cover" :alt="title">
             <!-- /card-img-top -->
 
-            <div class="card-body d-flex flex-column">
+            <div class="card-body d-flex flex-column justify-content-between">
                 <h4 class="card-title">
                     {{ title }}
                 </h4>
                 <small v-if="author">
-                    <strong>Author: </strong>
-                    {{ author }}
+                    <strong>Author: </strong><br>
+                    <span>{{ author }}</span>
                 </small>
                 <small v-if="date">
-                    <strong>Date: </strong>
-                    {{ date }}
+                    <strong>Date: </strong><br>
+                    <span>{{ date }}</span>
                 </small>
-                <div v-for="technology in technologies">
-                    <span class="badge bg-primary">{{ technology.name }}</span>
+                <div>
+                    <strong>Technologies:</strong><br>
+                    <span v-for="technology in technologies">
+                        <small class="me-1">{{ technology.name }}</small>
+                    </span>
                 </div>
-                <h5>{{ type.name }}</h5>
+                <hr>
+                <h5 class="fs-6 text-center">{{ type.name }}</h5>
                 <router-link class="text-center btn btn-warning"
                     :to="{ name: 'single-project', params: { 'slug': slug } }">More</router-link>
             </div>
             <!-- /card-body -->
 
 
-            <div v-if="link || code" class="card-footer d-flex flex-column">
-                <small v-if="link"><strong>Link: </strong>{{ link }}</small>
-                <small v-if="code"><strong>Code Link: </strong>{{ code }}</small>
+            <div class="card-footer shadow">
+
             </div>
             <!-- /card-footer -->
         </div>
