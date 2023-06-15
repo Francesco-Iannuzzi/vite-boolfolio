@@ -10,12 +10,11 @@ export default {
 </script>
 
 <template>
-    <section>
+    <AppBanner title="About" />
+    <!-- /Banner -->
 
-        <AppBanner title="About" />
-        <!-- /Banner -->
-
-    </section>
+    <section id="about_view"></section>
+    <!-- /about_view -->
 </template>
 
 

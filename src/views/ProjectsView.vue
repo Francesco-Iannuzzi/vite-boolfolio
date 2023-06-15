@@ -11,15 +11,16 @@ export default {
 </script>
 
 <template>
-    <section>
+    <AppBanner title="Projects" />
+    <!-- /Banner -->
 
-        <AppBanner title="Projects" />
-        <!-- /Banner -->
+    <section id="projects_view">
 
         <ProjectList />
         <!-- /ProjectList -->
 
     </section>
+    <!-- /projects_view -->
 </template>
 
 

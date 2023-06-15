@@ -10,12 +10,11 @@ export default {
 </script>
 
 <template>
-    <section>
+    <AppBanner title="Contacts" />
+    <!-- /Banner -->
 
-        <AppBanner title="Contacts" />
-        <!-- /Banner -->
-
-    </section>
+    <section id="contacts_view"></section>
+    <!-- /contacts_view -->
 </template>
 
 
