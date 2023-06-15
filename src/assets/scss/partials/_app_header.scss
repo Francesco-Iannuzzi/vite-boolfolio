@@ -1,0 +1,38 @@
+.navbar {
+    background-image: url('https://cdn.wallpapersafari.com/62/43/b94vtn.png');
+
+    .navbar-brand {
+        color: white;
+
+        &:hover {
+            color: azure;
+        }
+
+    }
+
+    .navbar-brand.router-link-active {
+        color: white;
+    }
+
+    .nav-link {
+        color: white;
+        border-bottom: solid 3px transparent;
+
+        &:hover {
+            color: azure;
+        }
+    }
+
+    .nav-link.router-link-active {
+        color: cornflowerblue;
+        border-bottom: solid 3px cornflowerblue;
+    }
+
+    form {
+        i {
+            &:hover {
+                color: red;
+            }
+        }
+    }
+}
