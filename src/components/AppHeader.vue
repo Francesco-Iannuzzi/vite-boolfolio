@@ -6,39 +6,43 @@ export default {
 </script>
 
 <template>
-    <nav class="navbar navbar-expand-md fixed-top">
-        <div class="container">
-            <router-link class="navbar-brand" :to="{ 'name': 'home' }">Portfolio</router-link>
-            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <router-link class="nav-link" :to="{ 'name': 'projects' }">Projects</router-link>
-                    </li>
-                    <li class="nav-item">
-                        <router-link class="nav-link" :to="{ 'name': 'contacts' }">Contacts</router-link>
-                    </li>
-                    <li class="nav-item">
-                        <router-link class="nav-link" :to="{ 'name': 'about' }">About</router-link>
-                    </li>
-                </ul>
-                <form class="d-flex gap-2" role="search">
+    <header>
+        <nav class="navbar navbar-expand-sm fixed-top">
+            <div class="container">
+                <router-link class="navbar-brand" :to="{ 'name': 'home' }">
+                    <h5 class="mb-0">Portfolio</h5>
+                </router-link>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <router-link class="nav-link pb-1" :to="{ 'name': 'projects' }">Projects</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link pb-1" :to="{ 'name': 'contacts' }">Contacts</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link pb-1" :to="{ 'name': 'about' }">About</router-link>
+                        </li>
+                    </ul>
+                    <!-- <form id="search" class="search d-flex gap-2" role="search">
                     <div class="input-group">
-                        <span class="input-group-text border-0" id="search">
+                        <span class="input-group-text border-0">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </span>
                         <input type="search" class="form-control border-0" placeholder="Search" aria-label="Search"
                             aria-describedby="search">
                     </div>
                     <button class="btn btn-outline-light" type="submit">Search</button>
-                </form>
+                </form> -->
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 </template>
 
 <style lang="scss" scoped></style>

@@ -1,40 +1,56 @@
+@use './variables.scss' as *;
+
 .navbar {
     background-image: url('https://media.discordapp.net/attachments/1071838099073671259/1118919573895401494/unaltroDio_dark_blueprint_background_052cb6ab-bf93-4281-9ade-8c70379aeb07.png?width=1506&height=1506');
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: $blueprint_dark;
 
     .navbar-brand {
-        color: white;
+        color: $blueprint_light;
 
         &:hover {
-            color: azure;
+            color: $blueprint_light;
         }
 
     }
 
     .navbar-brand.router-link-active {
-        color: white;
+        color: $blueprint_light;
     }
 
     .nav-link {
-        color: white;
+        color: $blueprint_light;
         border-bottom: solid 3px transparent;
 
         &:hover {
             color: yellow;
-            transition: 1s;
         }
     }
 
     .nav-link.router-link-active {
         color: cornflowerblue;
-        border-bottom: solid 3px cornflowerblue;
+        border-bottom: solid 3px $blueprint_primary;
     }
 
-    form {
-        i {
-            &:hover {
-                color: red;
+    #search {
+        span {
+            background-color: $blueprint_light;
+
+            i {
+                color: white;
+            }
+
+        }
+
+        input {
+            background-color: $blueprint_light;
+
+        }
+
+        &:hover {
+            i {
+                color: $blueprint_primary;
             }
         }
     }

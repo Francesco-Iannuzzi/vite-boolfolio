@@ -23,8 +23,8 @@ export default {
 
 <template>
     <div class="col">
-        <div class="card shadow h-100">
-            <img class="card-img-top" :src="cover" :alt="title">
+        <div id="project_card" class="card shadow h-100 border-0" :style="{ 'background-image': `url(${cover})` }">
+            <!-- <img class="card-img-top" :src="cover" :alt="title"> -->
             <!-- /card-img-top -->
 
             <div class="card-body d-flex flex-column justify-content-between">
@@ -40,20 +40,17 @@ export default {
                     <span>{{ date }}</span>
                 </small>
                 <div>
-                    <strong>Technologies:</strong><br>
                     <span v-for="technology in technologies">
-                        <small class="me-1">{{ technology.name }}</small>
+                        <span class="badge rounded-4 me-1">{{ technology.name }}</span>
                     </span>
                 </div>
-                <hr>
-                <h5 class="fs-6 text-center">{{ type.name }}</h5>
                 <router-link class="text-center" :to="{ name: 'single-project', params: { 'slug': slug } }"></router-link>
             </div>
             <!-- /card-body -->
 
 
             <div class="card-footer shadow">
-
+                <h5 class="fs-6 text-center">{{ type.name }}</h5>
             </div>
             <!-- /card-footer -->
         </div>

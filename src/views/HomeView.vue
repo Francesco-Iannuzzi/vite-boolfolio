@@ -1,11 +1,13 @@
 <script>
 import AppBanner from '../components/AppBanner.vue';
+import AppFooter from '../components/AppFooter.vue';
 import { store } from "../store";
 
 export default {
     name: "HomeView",
     components: {
         AppBanner,
+        AppFooter
     },
     data() {
         return {
@@ -23,6 +25,9 @@ export default {
         <h1 class="text-dark"></h1>
     </section>
     <!-- /home_view -->
+
+    <AppFooter />
+    <!-- /Footer -->
 </template>
 
 

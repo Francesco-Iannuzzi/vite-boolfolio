@@ -1,0 +1,12 @@
+@use './variables.scss' as *;
+
+.social {
+    a {
+        color: $blueprint_dark;
+
+        &:hover {
+            color: white;
+            opacity: 0.5;
+        }
+    }
+}

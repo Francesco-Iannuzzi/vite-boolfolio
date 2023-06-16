@@ -1,5 +1,6 @@
 <script>
 import AppBanner from '../components/AppBanner.vue';
+import AppFooter from '../components/AppFooter.vue';
 import ProjectList from '../components/ProjectList.vue';
 import { store } from '../store';
 
@@ -8,6 +9,7 @@ export default {
     components: {
         AppBanner,
         ProjectList,
+        AppFooter
     },
     data() {
         return {
@@ -21,13 +23,16 @@ export default {
     <AppBanner :title="store.views[1].projects.title" :description="store.views[1].projects.banner_description" />
     <!-- /Banner -->
 
-    <section id="projects_view">
+    <section id="projects_view" class="py-5">
 
         <ProjectList />
         <!-- /ProjectList -->
 
     </section>
     <!-- /projects_view -->
+
+    <AppFooter />
+    <!-- /Footer -->
 </template>
 
 
