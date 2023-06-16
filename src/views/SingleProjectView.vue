@@ -49,10 +49,13 @@ export default {
 
         <AppBanner :title="project.title" v-if="project" />
         <!-- /Banner -->
+
         <div class="container py-5" v-if="project">
-            <div class="jumbotron" style="background-image: :url();">
+            <div>
                 <img class="img-fluid" :src="store.getImage(project.cover)" :alt="project.title">
             </div>
+            <!-- /img -->
+
             <h3>{{ project.made_by }}</h3>
             <small><strong>Link: </strong>{{ project.link }}</small><br>
             <small><strong>Code Link: </strong>{{ project.code_link }}</small>
