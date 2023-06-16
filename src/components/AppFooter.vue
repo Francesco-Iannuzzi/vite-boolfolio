@@ -1,7 +1,13 @@
 <script>
+import { store } from '../store';
 
 export default {
     name: "AppFooter",
+    data() {
+        return {
+            store
+        }
+    }
 }
 </script>
 
@@ -20,10 +26,10 @@ export default {
                     <div class="social col-12 col-md-4 text-center">
                         <h4 class="fs-5 mb-3">AROUND THE WEB</h4>
                         <div class="d-flex justify-content-center gap-3">
-                            <a href="#">
+                            <a :href="store.url_linkedin">
                                 <i class="fa-brands fa-linkedin-in"></i>
                             </a>
-                            <a href="#">
+                            <a :href="store.url_instagram">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
