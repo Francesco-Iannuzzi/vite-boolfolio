@@ -32,6 +32,7 @@ export default {
                     console.log(project.technologies);
                 } else {
                     // TODO 404
+                    this.$router.push({ name: 'NotFound' })
                 }
             })
             .catch(err => {
