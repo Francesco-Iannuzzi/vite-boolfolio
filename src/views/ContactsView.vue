@@ -24,12 +24,12 @@ export default {
     <section id="contacts_view" class="py-5">
         <div class="container">
             <div class="card border-0 p-3">
-                <form action="post" class="container">
+                <form action="post">
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
                         <input type="text" name="name" id="name" class="form-control" placeholder="Your name"
                             aria-describedby="nameHelper">
-                        <small id="nameHelper" class="text-muted">Insert here your name</small>
+                        <small id="nameHelper">Insert here your name</small>
                     </div>
                     <!-- /form name -->
 
@@ -37,7 +37,7 @@ export default {
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelper"
                             placeholder="example@example.com">
-                        <small id="emailHelper" class="form-text text-muted">Insert here your email</small>
+                        <small id="emailHelper" class="form-text">Insert here your email</small>
                     </div>
                     <!-- /form email -->
 

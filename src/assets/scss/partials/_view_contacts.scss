@@ -1,1 +1,9 @@
 @use './variables.scss' as *;
+
+#contacts_view {
+    form {
+        small {
+            color: $blueprint_primary;
+        }
+    }
+}

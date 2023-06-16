@@ -24,35 +24,46 @@ export default {
 <template>
     <div class="col">
         <div id="project_card" class="card shadow h-100 border-0" :style="{ 'background-image': `url(${cover})` }">
-            <!-- <img class="card-img-top" :src="cover" :alt="title"> -->
-            <!-- /card-img-top -->
 
             <div class="card-body d-flex flex-column justify-content-between">
-                <h4 class="card-title">
-                    {{ title }}
-                </h4>
-                <small v-if="author">
-                    <strong>Author: </strong><br>
-                    <span>{{ author }}</span>
-                </small>
-                <small v-if="date">
-                    <strong>Date: </strong><br>
-                    <span>{{ date }}</span>
-                </small>
-                <div>
-                    <span v-for="technology in technologies">
-                        <span class="badge rounded-4 me-1">{{ technology.name }}</span>
-                    </span>
+
+                <div class="card_body_top">
+                    <div class="type">
+                        <h5 class="fs-6">{{ type.name }}</h5>
+                    </div>
+                    <!-- /type -->
+
+                    <small class="author" v-if="author">
+                        <strong>Author: </strong>
+                        <span>{{ author }}</span>
+                    </small>
+                    <!-- /author -->
                 </div>
-                <router-link class="text-center" :to="{ name: 'single-project', params: { 'slug': slug } }"></router-link>
+                <!-- /card_body_top -->
+
+                <div class="card_body_bottom">
+                    <div class="technology">
+                        <span class="badge rounded-4 me-1" v-for="technology in technologies">
+                            {{ technology.name }}
+                        </span>
+                    </div>
+                    <!-- /technologies -->
+                </div>
+                <!-- /card_body_bottom -->
+
             </div>
             <!-- /card-body -->
 
-
-            <div class="card-footer shadow">
-                <h5 class="fs-6 text-center">{{ type.name }}</h5>
+            <div class="title card-footer">
+                <h4 class="card-title">
+                    {{ title }}
+                </h4>
+                <!-- /title -->
             </div>
             <!-- /card-footer -->
+
+            <router-link class="text-center" :to="{ name: 'single-project', params: { 'slug': slug } }"></router-link>
+            <!-- /link to SingleProject -->
         </div>
     </div>
 </template>

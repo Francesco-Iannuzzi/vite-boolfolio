@@ -1,12 +1,28 @@
 @use './variables.scss' as *;
 
-.social {
-    a {
-        color: $blueprint_dark;
+#app_footer {
+    background-image: url('https://media.discordapp.net/attachments/1071838099073671259/1118919573895401494/unaltroDio_dark_blueprint_background_052cb6ab-bf93-4281-9ade-8c70379aeb07.png?width=1506&height=1506');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $blueprint_dark;
 
-        &:hover {
-            color: white;
-            opacity: 0.5;
+    .footer_top {
+        color: $blueprint_light;
+
+        .social {
+            i {
+                color: $blueprint_primary;
+                background-color: $blueprint_light;
+                border: solid 3px;
+                border-radius: 50%;
+                border-color: $blueprint_primary;
+                aspect-ratio: 1;
+                padding: 0.5rem;
+            }
         }
+    }
+
+    .footer_bottom {
+        color: $blueprint_light;
     }
 }

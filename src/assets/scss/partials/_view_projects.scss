@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 #project_card {
     position: relative;
     background-repeat: no-repeat;
@@ -17,4 +19,27 @@
         top: 0;
         left: 0;
     }
+
+    .card-body {
+        color: $blueprint_light;
+        height: 15rem;
+
+        .card_body_top {}
+
+        .card_body_bottom {
+            .badge {
+                background-color: $blueprint_primary;
+            }
+        }
+    }
+
+    .card-footer {
+        color: $blueprint_light;
+
+        #opacity {
+            background-color: red;
+            height: 100%;
+        }
+    }
+
 }
