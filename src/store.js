@@ -7,6 +7,7 @@ export const store = reactive({
     loading: true,
     api_url: 'http://127.0.0.1:8000/',
     projects_path: 'api/projects/',
+    contacts_path: 'api/contacts',
     projects: [],
     error: null,
     url_linkedin: 'https://www.linkedin.com/in/francesco-iannuzzi-085778237/',
