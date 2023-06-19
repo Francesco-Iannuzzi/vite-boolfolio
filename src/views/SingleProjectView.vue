@@ -1,12 +1,14 @@
 <script>
-import AppBanner from '../components/AppBanner.vue';
 import axios from 'axios';
 import { store } from "../store";
+import AppBanner from '../components/AppBanner.vue';
+import AppFooter from '../components/AppFooter.vue';
 
 export default {
     name: 'SingleProjectView',
     components: {
-        AppBanner
+        AppBanner,
+        AppFooter
     },
     props: {
 
@@ -87,6 +89,9 @@ export default {
         </div>
 
     </section>
+
+    <AppFooter />
+    <!-- /Footer -->
 </template>
 
 
