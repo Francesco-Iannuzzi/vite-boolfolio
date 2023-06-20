@@ -47,7 +47,17 @@ export default {
 <template>
     <section class="vue-home">
 
-        <div class="container py-5">
+        <div class="container">
+            <form id="search" class="search d-flex gap-2 mb-3" role="search">
+                <div class="input-group">
+                    <span class="input-group-text border-0">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <input type="search" class="form-control border-0" placeholder="Search" aria-label="Search"
+                        aria-describedby="search">
+                </div>
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
 
             <div v-if="store.projects && !store.loading" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 mb-4">
                 <ProjectCard :title="project.title" :slug="project.slug" :author="project.made_by"
