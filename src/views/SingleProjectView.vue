@@ -69,12 +69,13 @@ export default {
                     <a v-if="project.type" href="#" class="badge bg-primary text-decoration-none p-2">
                         {{ project.type.name }}
                     </a>
+                    <span v-else>N/A</span>
                 </div>
                 <div class="technologies">
                     <h4 class="mb-0 d-inline">
                         Technologies:
                     </h4>
-                    <ul v-if="project.technologies" class="ps-0">
+                    <ul v-if="project.technologies.name" class="ps-0">
                         <li v-for="technology in project.technologies" class="list-unstyled">
                             <i class="fa-solid fa-microchip"></i>
                             {{ technology.name }}

@@ -28,7 +28,7 @@ export default {
             <div class="card-body d-flex flex-column justify-content-between">
 
                 <div class="card_body_top">
-                    <div class="type">
+                    <div v-if="type" class="type">
                         <h5 class="fs-6">{{ type.name }}</h5>
                     </div>
                     <!-- /type -->
