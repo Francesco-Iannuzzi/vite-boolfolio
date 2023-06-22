@@ -54,10 +54,10 @@ export default {
 </script>
 
 <template>
-    <AppBanner :title="store.views[2].contacts.title" :description="store.views[2].contacts.banner_description" />
-    <!-- /Banner -->
+    <!-- <AppBanner :title="store.views[2].contacts.title" :description="store.views[2].contacts.banner_description" />
+    /Banner -->
 
-    <section id="contacts_view" class="py-5">
+    <section id="contacts">
         <div class="container">
 
             <div v-if="success" class="alert alert-success alert-dismissible fade show mb-5" role="alert">

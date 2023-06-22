@@ -49,8 +49,8 @@ export default {
 <template>
     <section>
 
-        <AppBanner :title="project.title" v-if="project" />
-        <!-- /Banner -->
+        <!-- <AppBanner :title="project.title" v-if="project" />
+        /Banner -->
 
         <div class="container py-5" v-if="project">
             <div>

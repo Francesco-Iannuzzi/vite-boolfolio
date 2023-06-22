@@ -18,10 +18,10 @@ export default {
 </script>
 
 <template>
-    <AppBanner :title="store.views[3].about.title" :description="store.views[3].about.banner_description" />
-    <!-- /Banner -->
+    <!-- <AppBanner :title="store.views[3].about.title" :description="store.views[3].about.banner_description" />
+    /Banner -->
 
-    <section id="about_view" class="py-5">
+    <section id="about">
         <div class="container">
             <div class="row">
                 <div class="col-4">

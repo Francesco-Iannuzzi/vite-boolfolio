@@ -20,10 +20,10 @@ export default {
 </script>
 
 <template>
-    <AppBanner :title="store.views[1].projects.title" :description="store.views[1].projects.banner_description" />
-    <!-- /Banner -->
+    <!-- <AppBanner :title="store.views[1].projects.title" :description="store.views[1].projects.banner_description" />
+    /Banner -->
 
-    <section id="projects_view" class="py-5">
+    <section id="projects">
 
         <ProjectList />
         <!-- /ProjectList -->

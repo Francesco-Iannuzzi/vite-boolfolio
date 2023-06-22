@@ -19,6 +19,11 @@ export default {
             </p>
         </div>
     </section>
+    <!-- <section id="jumbo">
+        <div class="bg-pan-left">
+            ciao
+        </div>
+    </section> -->
 </template>
 
 <style lang="scss" scoped></style>

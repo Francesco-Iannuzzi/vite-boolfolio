@@ -18,11 +18,20 @@ export default {
 </script>
 
 <template>
-    <AppBanner :title="store.views[0].home.title" :description="store.views[0].home.banner_description" />
-    <!-- /Banner -->
+    <!-- <AppBanner :title="store.views[0].home.title" :description="store.views[0].home.banner_description" />
+    /Banner -->
 
-    <section id="home_view">
-        <h1 class="text-dark"></h1>
+    <section id="home">
+        <div class="container">
+            <h1>Hello,</h1>
+            <h1>I'm Francesco</h1>
+            <div class="d-flex">
+                <p class="mb-0">
+                    and this is my Portfolio! <br>
+                    Scroll to see MY Projects, MY History and if you want to contact ME.
+                </p>
+            </div>
+        </div>
     </section>
     <!-- /home_view -->
 
