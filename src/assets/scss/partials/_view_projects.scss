@@ -1,45 +1,47 @@
 @use './variables' as *;
 
-#project_card {
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+#projects_view {
+    #project_card {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
 
-    &:hover {
-        transform: scale(1.2);
-        transition: 0.5s;
-        z-index: 2;
-    }
+        &:hover {
+            transform: scale(1.2);
+            transition: 0.5s;
+            z-index: 2;
+        }
 
-    a {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-    }
+        a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
 
-    .card-body {
-        color: $blueprint_light;
-        height: 15rem;
+        .card-body {
+            color: $blueprint_light;
+            height: 15rem;
 
-        .card_body_top {}
+            .card_body_top {}
 
-        .card_body_bottom {
-            .badge {
-                background-color: $blueprint_primary;
+            .card_body_bottom {
+                .badge {
+                    background-color: $blueprint_primary;
+                }
             }
         }
-    }
 
-    .card-footer {
-        color: $blueprint_light;
+        .card-footer {
+            color: $blueprint_light;
 
-        #opacity {
-            background-color: red;
-            height: 100%;
+            #opacity {
+                background-color: red;
+                height: 100%;
+            }
         }
-    }
 
+    }
 }

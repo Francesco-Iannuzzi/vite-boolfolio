@@ -21,7 +21,7 @@ export default {
     <!-- <AppBanner :title="store.views[3].about.title" :description="store.views[3].about.banner_description" />
     /Banner -->
 
-    <section id="about">
+    <section id="about_view">
         <div class="container">
             <div class="row">
                 <div class="col-4">

@@ -23,7 +23,7 @@ export default {
     <!-- <AppBanner :title="store.views[1].projects.title" :description="store.views[1].projects.banner_description" />
     /Banner -->
 
-    <section id="projects">
+    <section id="projects_view">
 
         <ProjectList />
         <!-- /ProjectList -->
