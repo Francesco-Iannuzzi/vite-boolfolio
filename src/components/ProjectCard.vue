@@ -24,14 +24,13 @@ export default {
 <template>
     <div class="col">
         <div id="project_card" class="card shadow h-100 border-0" :style="{ 'background-image': `url(${cover})` }">
-
-            <div class="card-body d-flex flex-column justify-content-between">
+            <div class="card-body d-flex flex-column justify-content-between rounded-top">
 
                 <div class="card_body_top">
-                    <div v-if="type" class="type">
-                        <h5 class="fs-6">{{ type.name }}</h5>
-                    </div>
-                    <!-- /type -->
+                    <h4 class="card-title">
+                        {{ title }}
+                    </h4>
+                    <!-- /title -->
 
                     <small class="author" v-if="author">
                         <strong>Author: </strong>
@@ -42,8 +41,8 @@ export default {
                 <!-- /card_body_top -->
 
                 <div class="card_body_bottom">
-                    <div class="technology">
-                        <span class="badge rounded-4 me-1" v-for="technology in technologies">
+                    <div class="technology d-flex justify-content-start gap-2">
+                        <span class="badge rounded-4" v-for="technology in technologies">
                             {{ technology.name }}
                         </span>
                     </div>
@@ -54,11 +53,11 @@ export default {
             </div>
             <!-- /card-body -->
 
-            <div class="title card-footer">
-                <h4 class="card-title">
-                    {{ title }}
-                </h4>
-                <!-- /title -->
+            <div class="type card-footer border-0 py-2 rounded-bottom">
+                <div v-if="type" class="type text-center fs-4">
+                    <span class="badge">{{ type.name }}</span>
+                </div>
+                <!-- /type -->
             </div>
             <!-- /card-footer -->
 
