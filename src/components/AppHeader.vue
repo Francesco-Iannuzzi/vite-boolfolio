@@ -7,7 +7,7 @@ export default {
 
 <template>
     <header>
-        <nav class="navbar navbar-expand">
+        <nav class="navbar navbar-expand fixed-top">
             <div class="container">
                 <div class="navbar_logo">
                     <router-link class="navbar-brand d-flex" :to="{ 'name': 'home' }">
