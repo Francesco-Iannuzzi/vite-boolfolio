@@ -1,3 +1,22 @@
 @use './variables.scss' as *;
 
-#about_view {}
+#about_view {
+    height: calc(90vh - 5rem);
+
+    .my_image {}
+
+    .my_info {
+        h1 {
+            color: gold;
+
+        }
+
+        p {
+            color: $blueprint_dark;
+
+        }
+    }
+
+
+
+}

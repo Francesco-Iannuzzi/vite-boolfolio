@@ -53,9 +53,9 @@ export default {
             </div>
             <!-- /card-body -->
 
-            <div class="type card-footer border-0 py-2 rounded-bottom">
-                <div v-if="type" class="type text-center fs-4">
-                    <span class="badge">{{ type.name }}</span>
+            <div class="type card-footer border-0 rounded-bottom">
+                <div v-if="type" class="type fs-4">
+                    <span class="badge mb-2">{{ type.name }}</span>
                 </div>
                 <!-- /type -->
             </div>

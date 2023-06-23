@@ -1,0 +1,57 @@
+@use './variables.scss' as *;
+
+#single_card {
+
+    .image {
+        position: relative;
+
+        .btn_modal {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            border: 0;
+        }
+
+        .modal {}
+    }
+
+    .project_info_primary {
+
+        .type {
+
+            .badge {
+                font-size: large;
+                background-color: $blueprint_light;
+                border: solid 2px $blueprint_dark;
+                color: $blueprint_dark;
+                text-decoration: none;
+            }
+        }
+
+        .technologies {
+
+            ul {
+                list-style: none;
+
+                .badge {
+                    background-color: gold;
+                    color: $blueprint_dark;
+                }
+            }
+        }
+    }
+
+    .project_info_secondary {
+
+        .info_link {
+
+            a {
+                font-size: 1rem;
+                text-decoration: none;
+                color: gold;
+            }
+        }
+    }
+}
